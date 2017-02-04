@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            示例下拉菜单
+            <div class="dropdown">
+                <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    下拉菜单
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">下拉菜单项</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            练习题
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" type="button" id="btn1">
+                    可选择的食物
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="btn1">
+                    <li role="presentation" class="dropdown-header">水果类</li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">苹果</a>
+                    </li>
+                    <li role="presentation" class="active">
+                        <a role="menuitem" tabindex="-1" href="#">香蕉(.active)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">葡萄</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">砂糖橘</a>
+                    </li>
+
+                    <!--菜单项分割线-->
+                    <li role="presentation" class="divider"></li>
+                    <!--菜单项分类标题-->
+                    <li role="presentation" class="dropdown-header">蔬菜类</li>
+
+                    <li role="presentation" class="disabled">
+                        <a role="menuitem" tabindex="-1" href="#">青椒(.disabled)</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">土豆</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" tabindex="-1" href="#">茄子长长长长</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+
+
+    </div>
+</div>
+
+
+<script src="./libs/jquery-3.0.0.min.js"></script>
+<script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
