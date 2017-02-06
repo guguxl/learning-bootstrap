@@ -114,25 +114,87 @@
         </div>
 
         <div class="col-md-6">
-
+            <h4>按钮菜单（垂直分组）</h4>
+            <!--和水平的嵌套分组类似，如果要实现垂直效果的菜单，只需要将 .btn-group 容器修改为 .btn-group-vertical 容器即可。-->
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-info">首页</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
+                        产品展示
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">收割机</a></li>
+                        <li><a href="#">电动机</a></li>
+                        <li><a href="#">拖拉机</a></li>
+                        <li><a href="#">电动车</a></li>
+                    </ul>
+                </div>
+                <button type="button" class="btn btn-primary">案例分析</button>
+                <button type="button" class="btn btn-default">联系我们</button>
+                <button type="button" class="btn btn-success">关于我们</button>
+            </div>
         </div>
+
     </div>
 
     <div class="row">
         <div class="col-md-6">
-
+            <h4>等分按钮菜单</h4>
+            <!--等分按钮组，也称为自适应按钮组，即组中的每个按钮平均占用整个容器的宽度。-->
+            <!--要实现等分按钮，只需要在容器上增加 .btn-group-justified 类名即可。-->
+            <!--注意：在制作等分按钮组时，尽量使用<a>标签元素来制作按钮，因为<button>元素在部分浏览器下支持不太友好。-->
+            <div class="btn-group btn-group-justified">
+                <a class="btn btn-info" href="#">首页</a>
+                <a class="btn btn-primary" href="#">产品展示</a>
+                <a class="btn btn-warning" href="#">案例分析</a>
+                <a class="btn btn-success" href="#">新闻中心</a>
+                <a class="btn btn-info" href="#">商务平台</a>
+            </div>
         </div>
+
         <div class="col-md-6">
-
         </div>
+
     </div>
+
+
 
     <div class="row">
         <div class="col-md-6">
-
+            <h4>按钮下拉菜单</h4>
+            <!--按钮下拉菜单和普通下拉菜单，不论从功能上还是外观上，都无太大不同。-->
+            <!--只是将外层容器从 div.dropdown 变为了 div.btn-group 而已。-->
+            <div class="btn-group">
+                <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" id="dropdownMenu1">
+                    按钮下拉菜单<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" href="#">菜单项-1</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">菜单项-2</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">菜单项-3</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">菜单项-4</a></li>
+                    <li role="presentation"><a role="menuitem" href="#">菜单项-5</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="col-md-6">
 
+        <div class="col-md-6">
+            <h4>按钮上弹菜单</h4>
+            <!--同"按钮下拉菜单"实现方式，只需要在外层的 div.btn-group 容器上增加 .dropup 类即可。-->
+            <div class="btn-group dropup">
+                <button class="btn btn-info dropdown-toggle" data-toggle="dropdown" type="button" id="dropdownMenu2">
+                    按钮下拉菜单
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+                    <li role="presentation"><a href="#" role="menuitem">菜单项-1</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">菜单项-2</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">菜单项-3</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">菜单项-4</a></li>
+                    <li role="presentation"><a href="#" role="menuitem">菜单项-5</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 
