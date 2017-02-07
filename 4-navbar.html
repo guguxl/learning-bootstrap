@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>丰富多彩的导航条</title>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h4>最基本的导航条
+                <code>div.navbar.navbar-default>ul.nav.navbar-nav</code>
+            </h4>
+            <!--最基本的导航条和上一节的导航外观看起来差不多，在 .navbar 容器中放置 ul.nav -->
+            <div class="navbar navbar-default">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">网站首页</a></li>
+                    <li><a href="#">系列教程</a></li>
+                    <li><a href="#">名师介绍</a></li>
+                    <li><a href="#">成功案例</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h4>复杂的组合各种元素的导航条
+                <code>div.navbar.navbar-default>(div.navbar-header+ul.nav.navbar-nav+form.navbar-form)</code>
+            </h4>
+
+            <div class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand">慕课网</a>
+                </div>
+
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">网站首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            系列教程<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="###">Html</a></li>
+                            <li><a href="###">Css3</a></li>
+                            <li><a href="###">ES6</a></li>
+                            <li class="nav-divider"></li>
+                            <li><a href="###">Vue</a></li>
+                            <li><a href="###">React</a></li>
+                            <li class="disabled"><a href="###">Angular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">名师介绍</a></li>
+                    <li><a href="#">成功案例</a></li>
+                    <li><a href="#">关于我们</a></li>
+                </ul>
+
+                <form action="##" class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="请输入搜索关键词...">
+                    </div>
+                    <button class="btn btn-info" type="submit">搜索</button>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="./libs/jquery-3.0.0.min.js"></script>
+<script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
