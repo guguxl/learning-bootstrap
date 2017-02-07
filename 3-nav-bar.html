@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>各种各样导航栏</title>
+    <link rel="stylesheet" href="./libs/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-6">
+            <h4>标签型tab导航
+                <code>ul.nav.nav-tabs</code>
+            </h4>
+            <!--在各项导航栏中，使用.active指示当前活动导航栏；使用.disable设置不可用导航栏-->
+            <ul class="nav nav-tabs">
+                <li class="active">
+                    <a href="##">Html</a>
+                </li>
+                <li><a href="##">Javascript</a></li>
+                <li class="disabled">
+                    <a href="##">Css3</a>
+                </li>
+                <li><a href="##">jQuery</a></li>
+                <li><a href="##">Responsive</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4>胶囊型pills导航
+                <code>ul.nav.nav-pills</code>
+            </h4>
+            <!--同tab型导航，只是把 .nav-tabs 类换成 .nav-pills 类-->
+            <ul class="nav nav-pills">
+                <li class="active">
+                    <a href="#">Html</a>
+                </li>
+                <li><a href="#">Css3</a></li>
+                <li><a href="#">ES6</a></li>
+                <li class="disabled">
+                    <a href="#">React</a>
+                </li>
+                <li><a href="#">Angular</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-6">
+            <h4>垂直堆叠型pills导航
+                <code>ul.nav.nav-pills.nav-stacked</code>
+            </h4>
+            <!--只是在pills型导航的基础上增加 .nav-stacked 类即可实现堆叠效果。-->
+            <!--同菜单项分割线类似，也可以用 li.nav-divider 来实现导航栏目的分割线。-->
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="#">Html</a>
+                </li>
+                <li><a href="#">Css3</a></li>
+                <li><a href="#">ES6</a></li>
+                <li class="nav-divider"></li>
+                <li class="disabled">
+                    <a href="#">React</a>
+                </li>
+                <li><a href="#">Angular</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>自适应tab导航
+                <code>ul.nav.nav-tabs.nav-justified</code>
+            </h4>
+            <ul class="nav nav-tabs nav-justified">
+                <li class="active">
+                    <a href="##">Html</a>
+                </li>
+                <li><a href="##">Javascript</a></li>
+                <li class="disabled">
+                    <a href="##">Css3</a>
+                </li>
+                <li><a href="##">jQuery</a></li>
+                <li><a href="##">Responsive</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4>自适应pills导航
+                <code>ul.nav.nav-pills.nav-justified</code>
+            </h4>
+            <ul class="nav nav-pills nav-justified">
+                <li class="active">
+                    <a href="#">Html</a>
+                </li>
+                <li><a href="#">Css3</a></li>
+                <li><a href="#">ES6</a></li>
+                <li class="disabled">
+                    <a href="#">React</a>
+                </li>
+                <li><a href="#">Angular</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <h4>导航下拉菜单</h4>
+            <ul class="nav nav-pills">
+                <li class="active"><a href="#">首页</a></li>
+
+                <!--对于导航下拉菜单，只需要将一级导航的某个<li>元素增加 .dropdown 类；
+                    然后再在该<li>元素的下级的<a>元素上设置.dropdown-toggle类, data-toggle属性等等，
+                    并增加一个ul列表作为二级菜单元素。    -->
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        教程<span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="##">Html5</a></li>
+                        <li><a href="##">Css3</a></li>
+                        <li class="disabled"><a href="##">Es6(敬请期待...)</a></li>
+                        <li class="nav-divider"></li>
+                        <li><a href="##">Vue</a></li>
+                        <li><a href="##">React</a></li>
+                        <li><a href="##">Angular</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">案例</a></li>
+                <li><a href="#">关于我们</a></li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <h4>
+                面包屑导航
+                <code>ul.breadcrumb</code>
+            </h4>
+            <!--注意，最后一个li元素表示当前页面所在位置，可以不需要a元素设置链接，同时可以为该li元素增加 .active 类。-->
+            <ul class="breadcrumb">
+                <li><a href="#">铁通公司</a></li>
+                <li><a href="#">云支撑中心</a></li>
+                <li><a href="#">技术分析处</a></li>
+                <li class="active">XX员工信息</li>
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="./libs/jquery-3.0.0.min.js"></script>
+<script src="./libs/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
